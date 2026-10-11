@@ -215,6 +215,13 @@ header{
   position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
   font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; color:var(--text);
 }
+.op-ring .avatar{
+  position:absolute; inset:9px; border-radius:50%; overflow:hidden;
+  box-shadow: 0 0 0 1px rgba(79,216,255,0.15);
+}
+.op-ring .avatar img{
+  width:100%; height:100%; object-fit:cover; display:block;
+}
 
 .op-name{ position:relative; z-index:1; text-align:center; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; margin-bottom:2px; }
 .op-role{ position:relative; z-index:1; text-align:center; color:var(--cyan); font-family:'JetBrains Mono',monospace; font-size:11.5px; margin-bottom:20px; }
@@ -554,7 +561,7 @@ footer{
                 <circle class="track" cx="50" cy="50" r="46"></circle>
                 <circle class="sweep" cx="50" cy="50" r="46"></circle>
               </svg>
-              <div class="mark">ES</div>
+              <div class="avatar"><img src="assets/img/eyal-avatar.jpg" alt="Eyal Salkovsky"></div>
             </div>
 
             <div class="op-name">Eyal Salkovsky</div>
