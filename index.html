@@ -290,9 +290,13 @@ header{
 /* ---------- about ---------- */
 .about{ padding-block: 60px; }
 .about-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items:start; }
+.about-grid > div:first-child{ position: sticky; top: 100px; }
+@media (max-width: 860px){
+  .about-grid > div:first-child{ position: static; }
+}
 .about-text p{ color: var(--muted); margin-bottom: 14px; font-size: 15px; }
 .about-text b{ color: var(--text); }
-.checklist{ list-style:none; padding:0; margin: 24px 0 0; display:flex; flex-direction:column; gap:12px; }
+.checklist{ list-style:none; padding:0; margin: 24px 0 28px; display:flex; flex-direction:column; gap:12px; }
 .checklist li{ display:flex; gap:12px; align-items:flex-start; font-size:14px; color: var(--muted); }
 
 .race-photo{
@@ -632,6 +636,13 @@ footer{
       <div class="reveal about-text">
         <p>I'm Eyal, 24 — a security guard turned second-year Computer Science student with strong self-discipline and a fast learning curve. I've spent the last few years on real-world security protocols, from monitoring systems at Bank Hapoalim in Tel Aviv to relocating independently for a guard role in Malmö — and now I'm channeling that same alertness into <b>breaking into cybersecurity</b>.</p>
         <p>I'm currently wrapping up the <b>Google Cybersecurity Professional Certificate</b>, and I've built hands-on projects across offensive security, incident response, and systems programming to prove the skills, not just list them.</p>
+
+        <ul class="checklist">
+          <li><span class="mark">&#10003;</span> Comfortable with Nmap, Metasploit, and Wireshark for recon and exploitation</li>
+          <li><span class="mark">&#10003;</span> Practiced in alert triage, IOC analysis, and incident documentation</li>
+          <li><span class="mark">&#10003;</span> Writes real C — not just scripts: a working two-pass assembler from scratch</li>
+        </ul>
+
         <p>Outside of security, I'm a die-hard metalhead and a fitness enthusiast — I compete in marathons and half-Ironman triathlons, which is probably where the self-discipline comes from.</p>
 
         <div class="race-photo">
@@ -644,12 +655,6 @@ footer{
             <div class="bib">BIB #480 — EYAL</div>
           </div>
         </div>
-
-        <ul class="checklist">
-          <li><span class="mark">&#10003;</span> Comfortable with Nmap, Metasploit, and Wireshark for recon and exploitation</li>
-          <li><span class="mark">&#10003;</span> Practiced in alert triage, IOC analysis, and incident documentation</li>
-          <li><span class="mark">&#10003;</span> Writes real C — not just scripts: a working two-pass assembler from scratch</li>
-        </ul>
       </div>
     </div>
   </section>
