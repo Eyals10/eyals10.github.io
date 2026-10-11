@@ -416,8 +416,12 @@ header{
 .cert-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:16px; }
 .cert-card{
   background: var(--bg-1); border:1px solid var(--border); border-radius:12px; padding:18px;
+  display:block; text-decoration:none; color:inherit; transition: transform .18s, border-color .18s, box-shadow .18s;
 }
+a.cert-card:hover{ transform: translateY(-3px); border-color: rgba(79,216,255,0.45); box-shadow: 0 16px 40px -20px rgba(79,216,255,0.25); }
 .cert-card .c-top{ display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px;}
+.cert-card .c-arrow{ color: var(--dim); font-size:14px; transition: transform .18s, color .18s; }
+a.cert-card:hover .c-arrow{ transform: translate(2px,-2px); color: var(--cyan); }
 .cert-card h3{ font-size: 13.5px; }
 .cert-card .c-issuer{ font-size:11.5px; color:var(--muted); margin-top:4px; }
 .cert-card .c-id{ font-family:'JetBrains Mono',monospace; font-size:10.5px; color: var(--cyan); margin-top:8px; }
@@ -811,23 +815,23 @@ footer{
         <h2 class="section-title">Certifications</h2>
       </div>
       <div class="cert-grid reveal">
-        <div class="cert-card">
-          <div class="c-top"><div class="c-check">&#10003;</div></div>
+        <a class="cert-card" href="https://www.credly.com/badges/4b9daa79-110b-485e-b1e1-a20e89f3517f/linked_in_profile" target="_blank" rel="noopener">
+          <div class="c-top"><div class="c-check">&#10003;</div><span class="c-arrow">&#8599;</span></div>
           <h3>Google Cybersecurity Professional Certificate (v.2)</h3>
           <div class="c-issuer">Coursera · Sep 2026</div>
-        </div>
-        <div class="cert-card">
-          <div class="c-top"><div class="c-check">&#10003;</div></div>
+        </a>
+        <a class="cert-card" href="https://www.coursera.org/account/accomplishments/verify/SD7PC7FTN22D" target="_blank" rel="noopener">
+          <div class="c-top"><div class="c-check">&#10003;</div><span class="c-arrow">&#8599;</span></div>
           <h3>Metasploit: Ethical Penetration Testing</h3>
           <div class="c-issuer">Coursera · Sep 2026</div>
           <div class="c-id">ID SD7PC7FTN22D</div>
-        </div>
-        <div class="cert-card">
-          <div class="c-top"><div class="c-check">&#10003;</div></div>
+        </a>
+        <a class="cert-card" href="https://www.coursera.org/account/accomplishments/verify/RJCENBN3MO58" target="_blank" rel="noopener">
+          <div class="c-top"><div class="c-check">&#10003;</div><span class="c-arrow">&#8599;</span></div>
           <h3>Wireshark: Analyze Web Traffic</h3>
           <div class="c-issuer">Coursera · Sep 2026</div>
           <div class="c-id">ID RJCENBN3MO58</div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
