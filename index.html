@@ -377,6 +377,7 @@ header{
 .pc-badge.blue{ background: rgba(79,216,255,0.14); color: var(--cyan); }
 .pc-badge.red{ background: rgba(255,93,126,0.14); color: var(--red); }
 .pc-badge.gray{ background: rgba(139,153,184,0.14); color: var(--muted); }
+.pc-badge.green{ background: rgba(79,227,161,0.14); color: var(--green); }
 .pc-arrow{ color: var(--dim); font-size: 16px; transition: transform .18s, color .18s; }
 .project-card:hover .pc-arrow{ transform: translate(3px,-3px); color: var(--cyan); }
 .project-card h3{ font-size: 17px; margin-bottom: 8px; }
@@ -622,7 +623,7 @@ footer{
     <div class="container reveal">
       <div class="stats-grid">
         <div class="stat"><div class="n">4</div><div class="l">Certifications</div></div>
-        <div class="stat"><div class="n">3</div><div class="l">Featured Projects</div></div>
+        <div class="stat"><div class="n">4</div><div class="l">Featured Projects</div></div>
         <div class="stat"><div class="n mono">root</div><div class="l">Access Achieved</div></div>
         <div class="stat"><div class="n">2nd Yr</div><div class="l">B.Sc. Computer Science</div></div>
       </div>
@@ -742,6 +743,19 @@ footer{
           <p>Built a complete two-pass assembler from scratch in ANSI C: macro expansion, symbol resolution, and machine-code encoding, with zero warnings under strict compiler flags.</p>
           <div class="pc-tools">
             <span>C (ANSI C89/90)</span><span>GCC</span><span>Make</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/yanivbahalul/Riddick" target="_blank" rel="noopener">
+          <div class="pc-top">
+            <span class="pc-badge green">ML / RESEARCH</span>
+            <span class="pc-arrow">&#8599;</span>
+          </div>
+          <h3>Riddick — Low-Light Image Enhancement</h3>
+          <div class="pc-sub">Collaborative Project with Yaniv Bahalul</div>
+          <p>A PyTorch deep-learning pipeline that restores detail and visibility in low-light images, benchmarked with PSNR/SSIM against the LOL dataset, with low-light video enhancement planned next.</p>
+          <div class="pc-tools">
+            <span>Python</span><span>PyTorch</span><span>PSNR / SSIM</span>
           </div>
         </a>
 
